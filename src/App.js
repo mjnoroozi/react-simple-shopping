@@ -1,7 +1,12 @@
 import "./App.css";
+import { BookingProvider } from "./context/BookingContext";
 
 function App() {
-  return <div className="App">Homepage</div>;
+  return (
+    <BookingProvider>
+      <main>main content</main>
+    </BookingProvider>
+  );
 }
 
 export default App;
