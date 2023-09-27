@@ -4,7 +4,7 @@ const BookingContext = createContext(undefined);
 
 const initializeTimes = () => {
   return {
-    availableTimes: initializeTimes(),
+    availableTimes: {},
   };
 };
 
