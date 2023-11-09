@@ -19,9 +19,9 @@ export const BookingProvider = ({ children }) => {
   );
 
   return (
-    <BookingContext.provider value={{ availableTimes }}>
+    <BookingContext.Provider value={{ availableTimes, useAvailableTimes }}>
       {children}
-    </BookingContext.provider>
+    </BookingContext.Provider>
   );
 };
 
