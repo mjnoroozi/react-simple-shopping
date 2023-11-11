@@ -4,7 +4,24 @@ const BookingContext = createContext(undefined);
 
 const initializeTimes = () => {
   return {
-    availableTimes: {},
+    availableTimes: [
+      {
+        value: "9:00",
+        title: "9 AM",
+      },
+      {
+        value: "12:00",
+        title: "12 PM",
+      },
+      {
+        value: "15:00",
+        title: "3 PM",
+      },
+      {
+        value: "18:00",
+        title: "6 PM",
+      },
+    ],
   };
 };
 

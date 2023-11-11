@@ -1,11 +1,18 @@
 import "./App.css";
 import { BookingProvider } from "./context/BookingContext";
+import { Main, Footer } from "./components";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <BookingProvider>
-      <main>main content</main>
-    </BookingProvider>
+    <>
+      <ChakraProvider>
+        <BookingProvider>
+          <Main />
+          <Footer />
+        </BookingProvider>
+      </ChakraProvider>
+    </>
   );
 }
 
